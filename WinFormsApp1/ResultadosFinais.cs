@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UrnaEletrônica;
 
-namespace WinFormsApp1
+namespace UrnaEletrônica
 {
-    public partial class UrnaFalsa : Form
+    public partial class ResultadosFinais : Form
     {
-        public UrnaFalsa()
+        public ResultadosFinais()
         {
             InitializeComponent();
+        }
+        
+        private void ResultadosFinais_Load(object sender, EventArgs e)
+        {
+            labelIrmJorel.Text = "";
         }
     }
 }

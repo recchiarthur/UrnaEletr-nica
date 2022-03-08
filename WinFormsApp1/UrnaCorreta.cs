@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UrnaEletrônica;
 
 namespace WinFormsApp1
 {
@@ -17,7 +18,7 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
-        public List<string> votos = new List<string>(); 
+        public List<string> votos = new List<string>();
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -209,6 +210,17 @@ namespace WinFormsApp1
             pictureJorel.Hide();
             pictureGesonel.Hide();
             pictureAnaCat.Hide();
+        }
+
+        private void buttonFinalizar_Click(object sender, EventArgs e)
+        {
+            InserirSenha inserirSenha = new InserirSenha();
+            inserirSenha.Show();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -15,8 +15,7 @@ namespace WinFormsApp1
 
         private void buttonUrnaFalsa_Click(object sender, EventArgs e)
         {
-            UrnaFalsa urnaFalsa = new UrnaFalsa();
-            urnaFalsa.Show();
+            MessageBox.Show("Urna falsa ainda não disponível");
         }
     }
 }

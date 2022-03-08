@@ -56,6 +56,7 @@
             this.pictureJorel = new System.Windows.Forms.PictureBox();
             this.pictureGesonel = new System.Windows.Forms.PictureBox();
             this.pictureAnaCat = new System.Windows.Forms.PictureBox();
+            this.buttonFinalizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureIrmJorel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureVovoJuju)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureJorel)).BeginInit();
@@ -65,8 +66,8 @@
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(131, 132);
@@ -302,6 +303,7 @@
             this.label5.Size = new System.Drawing.Size(122, 35);
             this.label5.TabIndex = 19;
             this.label5.Text = "Partido:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // labelNome
             // 
@@ -366,12 +368,25 @@
             this.pictureAnaCat.TabIndex = 26;
             this.pictureAnaCat.TabStop = false;
             // 
+            // buttonFinalizar
+            // 
+            this.buttonFinalizar.BackColor = System.Drawing.Color.SaddleBrown;
+            this.buttonFinalizar.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonFinalizar.Location = new System.Drawing.Point(4, 444);
+            this.buttonFinalizar.Name = "buttonFinalizar";
+            this.buttonFinalizar.Size = new System.Drawing.Size(92, 77);
+            this.buttonFinalizar.TabIndex = 27;
+            this.buttonFinalizar.Text = "Finalizar Eleição";
+            this.buttonFinalizar.UseVisualStyleBackColor = false;
+            this.buttonFinalizar.Click += new System.EventHandler(this.buttonFinalizar_Click);
+            // 
             // UrnaCorreta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(922, 530);
+            this.Controls.Add(this.buttonFinalizar);
             this.Controls.Add(this.pictureAnaCat);
             this.Controls.Add(this.pictureGesonel);
             this.Controls.Add(this.pictureJorel);
@@ -441,5 +456,6 @@
         private PictureBox pictureJorel;
         private PictureBox pictureGesonel;
         private PictureBox pictureAnaCat;
+        private Button buttonFinalizar;
     }
 }
