@@ -21,16 +21,42 @@ namespace WinFormsApp1
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if(textBox1.Text + textBox2.Text == "01")
-            {
-                labelNome.Text = "Irmão do Jorel";
-                labelPartido.Text = "PIJ";
-            }
+   
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            string numVoto = textBox1.Text + textBox2.Text;
+            if (numVoto == "01")
+            {
+                labelNome.Text = "Irmão do Jorel";
+                labelPartido.Text = "PIJ";
+                pictureIrmJorel.Show();
+            }
+            else if (textBox1.Text + textBox2.Text == "02")
+            {
+                labelNome.Text = "Vovó Juju";
+                labelPartido.Text = "PABC";
+                pictureVovoJuju.Show();
+            }
+            else if (textBox1.Text + textBox2.Text == "03")
+            {
+                labelNome.Text = "Jorel";
+                labelPartido.Text = "PdJL";
+                pictureJorel.Show();
+            }
+            else if (textBox1.Text + textBox2.Text == "04")
+            {
+                labelNome.Text = "Gesonel";
+                labelPartido.Text = "PGMD";
+                pictureGesonel.Show();
+            }
+            else if (textBox1.Text + textBox2.Text == "05")
+            {
+                labelNome.Text = "Ana Catarina";
+                labelPartido.Text = "PdAC";
+                pictureAnaCat.Show();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -157,6 +183,13 @@ namespace WinFormsApp1
         {
             textBox1.Clear();
             textBox2.Clear();
+            labelNome.Text = "";
+            labelPartido.Text = "";
+            pictureIrmJorel.Hide();
+            pictureVovoJuju.Hide();
+            pictureJorel.Hide();
+            pictureGesonel.Hide();
+            pictureAnaCat.Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -167,6 +200,15 @@ namespace WinFormsApp1
         private void buttonConfirma_Click(object sender, EventArgs e)
         {
             votos.Add(textBox1.Text + textBox2.Text);
+        }
+
+        private void UrnaCorreta_Load(object sender, EventArgs e)
+        {
+            pictureIrmJorel.Hide();
+            pictureVovoJuju.Hide();
+            pictureJorel.Hide();
+            pictureGesonel.Hide();
+            pictureAnaCat.Hide();
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UrnaCorreta));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,6 +51,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.labelNome = new System.Windows.Forms.Label();
             this.labelPartido = new System.Windows.Forms.Label();
+            this.pictureIrmJorel = new System.Windows.Forms.PictureBox();
+            this.pictureVovoJuju = new System.Windows.Forms.PictureBox();
+            this.pictureJorel = new System.Windows.Forms.PictureBox();
+            this.pictureGesonel = new System.Windows.Forms.PictureBox();
+            this.pictureAnaCat = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureIrmJorel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureVovoJuju)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureJorel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureGesonel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAnaCat)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -295,20 +306,65 @@
             // labelNome
             // 
             this.labelNome.AutoSize = true;
-            this.labelNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelNome.Location = new System.Drawing.Point(131, 196);
+            this.labelNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelNome.Location = new System.Drawing.Point(96, 205);
             this.labelNome.Name = "labelNome";
-            this.labelNome.Size = new System.Drawing.Size(0, 35);
+            this.labelNome.Size = new System.Drawing.Size(0, 25);
             this.labelNome.TabIndex = 20;
             // 
             // labelPartido
             // 
             this.labelPartido.AutoSize = true;
-            this.labelPartido.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelPartido.Location = new System.Drawing.Point(126, 252);
+            this.labelPartido.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPartido.Location = new System.Drawing.Point(112, 261);
             this.labelPartido.Name = "labelPartido";
-            this.labelPartido.Size = new System.Drawing.Size(0, 35);
+            this.labelPartido.Size = new System.Drawing.Size(0, 25);
             this.labelPartido.TabIndex = 21;
+            // 
+            // pictureIrmJorel
+            // 
+            this.pictureIrmJorel.Image = ((System.Drawing.Image)(resources.GetObject("pictureIrmJorel.Image")));
+            this.pictureIrmJorel.Location = new System.Drawing.Point(298, 110);
+            this.pictureIrmJorel.Name = "pictureIrmJorel";
+            this.pictureIrmJorel.Size = new System.Drawing.Size(194, 306);
+            this.pictureIrmJorel.TabIndex = 22;
+            this.pictureIrmJorel.TabStop = false;
+            // 
+            // pictureVovoJuju
+            // 
+            this.pictureVovoJuju.Image = ((System.Drawing.Image)(resources.GetObject("pictureVovoJuju.Image")));
+            this.pictureVovoJuju.Location = new System.Drawing.Point(298, 110);
+            this.pictureVovoJuju.Name = "pictureVovoJuju";
+            this.pictureVovoJuju.Size = new System.Drawing.Size(194, 306);
+            this.pictureVovoJuju.TabIndex = 23;
+            this.pictureVovoJuju.TabStop = false;
+            // 
+            // pictureJorel
+            // 
+            this.pictureJorel.Image = ((System.Drawing.Image)(resources.GetObject("pictureJorel.Image")));
+            this.pictureJorel.Location = new System.Drawing.Point(298, 110);
+            this.pictureJorel.Name = "pictureJorel";
+            this.pictureJorel.Size = new System.Drawing.Size(194, 306);
+            this.pictureJorel.TabIndex = 24;
+            this.pictureJorel.TabStop = false;
+            // 
+            // pictureGesonel
+            // 
+            this.pictureGesonel.Image = ((System.Drawing.Image)(resources.GetObject("pictureGesonel.Image")));
+            this.pictureGesonel.Location = new System.Drawing.Point(298, 110);
+            this.pictureGesonel.Name = "pictureGesonel";
+            this.pictureGesonel.Size = new System.Drawing.Size(273, 158);
+            this.pictureGesonel.TabIndex = 25;
+            this.pictureGesonel.TabStop = false;
+            // 
+            // pictureAnaCat
+            // 
+            this.pictureAnaCat.Image = ((System.Drawing.Image)(resources.GetObject("pictureAnaCat.Image")));
+            this.pictureAnaCat.Location = new System.Drawing.Point(298, 110);
+            this.pictureAnaCat.Name = "pictureAnaCat";
+            this.pictureAnaCat.Size = new System.Drawing.Size(194, 328);
+            this.pictureAnaCat.TabIndex = 26;
+            this.pictureAnaCat.TabStop = false;
             // 
             // UrnaCorreta
             // 
@@ -316,6 +372,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(922, 530);
+            this.Controls.Add(this.pictureAnaCat);
+            this.Controls.Add(this.pictureGesonel);
+            this.Controls.Add(this.pictureJorel);
+            this.Controls.Add(this.pictureVovoJuju);
+            this.Controls.Add(this.pictureIrmJorel);
             this.Controls.Add(this.labelPartido);
             this.Controls.Add(this.labelNome);
             this.Controls.Add(this.label5);
@@ -340,6 +401,12 @@
             this.Controls.Add(this.textBox1);
             this.Name = "UrnaCorreta";
             this.Text = "Urna Correta";
+            this.Load += new System.EventHandler(this.UrnaCorreta_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureIrmJorel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureVovoJuju)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureJorel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureGesonel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAnaCat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,5 +436,10 @@
         private Label label5;
         private Label labelNome;
         private Label labelPartido;
+        private PictureBox pictureIrmJorel;
+        private PictureBox pictureVovoJuju;
+        private PictureBox pictureJorel;
+        private PictureBox pictureGesonel;
+        private PictureBox pictureAnaCat;
     }
 }
