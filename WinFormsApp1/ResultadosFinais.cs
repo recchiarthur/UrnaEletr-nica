@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UrnaEletrônica;
+using WinFormsApp1;
 
 namespace UrnaEletrônica
 {
@@ -17,10 +18,16 @@ namespace UrnaEletrônica
         {
             InitializeComponent();
         }
-        
+
         private void ResultadosFinais_Load(object sender, EventArgs e)
         {
-            labelIrmJorel.Text = "";
+            UrnaCorreta urnaCorreta = new UrnaCorreta();
+            labelIrmJorel.Text = UrnaCorreta.votosIrmJorel.ToString();
+            labelVovoJuju.Text = UrnaCorreta.votosVovoJuju.ToString();
+            labelJorel.Text = UrnaCorreta.votosJorel.ToString();
+            labelGesonel.Text = UrnaCorreta.votosGesonel.ToString();
+            labelAnaCat.Text = UrnaCorreta.votosAnaCat.ToString();
+            
         }
     }
 }

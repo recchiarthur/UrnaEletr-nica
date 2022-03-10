@@ -19,6 +19,7 @@ namespace WinFormsApp1
         }
 
         public List<string> votos = new List<string>();
+        public static int votosIrmJorel, votosJorel, votosVovoJuju, votosAnaCat, votosGesonel, votosNulo;
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -34,29 +35,34 @@ namespace WinFormsApp1
                 labelPartido.Text = "PIJ";
                 pictureIrmJorel.Show();
             }
-            else if (textBox1.Text + textBox2.Text == "02")
+            else if (numVoto == "02")
             {
                 labelNome.Text = "Vovó Juju";
                 labelPartido.Text = "PABC";
                 pictureVovoJuju.Show();
             }
-            else if (textBox1.Text + textBox2.Text == "03")
+            else if (numVoto == "03")
             {
                 labelNome.Text = "Jorel";
                 labelPartido.Text = "PdJL";
                 pictureJorel.Show();
             }
-            else if (textBox1.Text + textBox2.Text == "04")
+            else if (numVoto == "04")
             {
                 labelNome.Text = "Gesonel";
                 labelPartido.Text = "PGMD";
                 pictureGesonel.Show();
             }
-            else if (textBox1.Text + textBox2.Text == "05")
+            else if (numVoto == "05")
             {
                 labelNome.Text = "Ana Catarina";
                 labelPartido.Text = "PdAC";
                 pictureAnaCat.Show();
+            }
+            else
+            {
+                labelNome.Text = "VOTO NULO!";
+                votosNulo++;
             }
         }
 
@@ -195,12 +201,21 @@ namespace WinFormsApp1
 
         private void button6_Click(object sender, EventArgs e)
         {
-            
+            labelNome.Text = "VOTO EM BRANCO!";
         }
 
         private void buttonConfirma_Click(object sender, EventArgs e)
         {
             votos.Add(textBox1.Text + textBox2.Text);
+            textBox1.Clear();
+            textBox2.Clear();
+            labelNome.Text = "";
+            labelPartido.Text = "";
+            pictureIrmJorel.Hide();
+            pictureVovoJuju.Hide();
+            pictureJorel.Hide();
+            pictureGesonel.Hide();
+            pictureAnaCat.Hide();
         }
 
         private void UrnaCorreta_Load(object sender, EventArgs e)
@@ -216,6 +231,29 @@ namespace WinFormsApp1
         {
             InserirSenha inserirSenha = new InserirSenha();
             inserirSenha.Show();
+            for (int i = 0; i < 5; i++)
+            {
+                if(votos[i] == "01")
+                {
+                    votosIrmJorel++;
+                }
+                else if(votos[i] == "02")
+                {
+                    votosVovoJuju++;
+                }
+                else if(votos[i] == "03")
+                {
+                    votosJorel++;
+                }
+                else if(votos[i] == "04")
+                {
+                    votosGesonel++;
+                }
+                else if(votos[i] == "05")
+                {
+                    votosAnaCat++;
+                }
+            }
         }
 
         private void label5_Click(object sender, EventArgs e)

@@ -67,9 +67,9 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(26, 132);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 28);
+            this.label3.Size = new System.Drawing.Size(100, 28);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Vovó Juju";
+            this.label3.Text = "Vovó Juju:";
             // 
             // label4
             // 

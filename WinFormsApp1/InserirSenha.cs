@@ -32,6 +32,10 @@ namespace UrnaEletrônica
                 ResultadosFinais resultadosFinais = new ResultadosFinais();
                 resultadosFinais.Show();
             }
+            else
+            {
+                MessageBox.Show("Senha incorreta!");
+            }
         }
     }
 }
