@@ -27,7 +27,17 @@ namespace UrnaEletrônica
             labelJorel.Text = UrnaCorreta.votosJorel.ToString();
             labelGesonel.Text = UrnaCorreta.votosGesonel.ToString();
             labelAnaCat.Text = UrnaCorreta.votosAnaCat.ToString();
-            
+            labelNulo.Text = UrnaCorreta.votosNulo.ToString();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

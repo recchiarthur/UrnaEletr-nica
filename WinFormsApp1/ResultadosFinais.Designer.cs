@@ -39,13 +39,15 @@
             this.labelJorel = new System.Windows.Forms.Label();
             this.labelGesonel = new System.Windows.Forms.Label();
             this.labelAnaCat = new System.Windows.Forms.Label();
+            this.labelNulo = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(26, 9);
+            this.label1.Location = new System.Drawing.Point(26, -4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(360, 60);
             this.label1.TabIndex = 0;
@@ -55,7 +57,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(26, 83);
+            this.label2.Location = new System.Drawing.Point(26, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 28);
             this.label2.TabIndex = 1;
@@ -65,7 +67,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(26, 132);
+            this.label3.Location = new System.Drawing.Point(26, 102);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 28);
             this.label3.TabIndex = 2;
@@ -75,7 +77,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(26, 180);
+            this.label4.Location = new System.Drawing.Point(26, 150);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 28);
             this.label4.TabIndex = 3;
@@ -85,7 +87,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(26, 223);
+            this.label5.Location = new System.Drawing.Point(26, 193);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 28);
             this.label5.TabIndex = 4;
@@ -95,7 +97,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(26, 266);
+            this.label6.Location = new System.Drawing.Point(26, 236);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(127, 28);
             this.label6.TabIndex = 5;
@@ -105,7 +107,7 @@
             // 
             this.labelIrmJorel.AutoSize = true;
             this.labelIrmJorel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelIrmJorel.Location = new System.Drawing.Point(174, 83);
+            this.labelIrmJorel.Location = new System.Drawing.Point(174, 53);
             this.labelIrmJorel.Name = "labelIrmJorel";
             this.labelIrmJorel.Size = new System.Drawing.Size(0, 28);
             this.labelIrmJorel.TabIndex = 6;
@@ -114,7 +116,7 @@
             // 
             this.labelVovoJuju.AutoSize = true;
             this.labelVovoJuju.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelVovoJuju.Location = new System.Drawing.Point(128, 132);
+            this.labelVovoJuju.Location = new System.Drawing.Point(128, 102);
             this.labelVovoJuju.Name = "labelVovoJuju";
             this.labelVovoJuju.Size = new System.Drawing.Size(0, 28);
             this.labelVovoJuju.TabIndex = 7;
@@ -123,7 +125,7 @@
             // 
             this.labelJorel.AutoSize = true;
             this.labelJorel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelJorel.Location = new System.Drawing.Point(89, 180);
+            this.labelJorel.Location = new System.Drawing.Point(89, 150);
             this.labelJorel.Name = "labelJorel";
             this.labelJorel.Size = new System.Drawing.Size(0, 28);
             this.labelJorel.TabIndex = 8;
@@ -132,7 +134,7 @@
             // 
             this.labelGesonel.AutoSize = true;
             this.labelGesonel.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelGesonel.Location = new System.Drawing.Point(114, 223);
+            this.labelGesonel.Location = new System.Drawing.Point(114, 193);
             this.labelGesonel.Name = "labelGesonel";
             this.labelGesonel.Size = new System.Drawing.Size(0, 28);
             this.labelGesonel.TabIndex = 9;
@@ -141,10 +143,31 @@
             // 
             this.labelAnaCat.AutoSize = true;
             this.labelAnaCat.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelAnaCat.Location = new System.Drawing.Point(159, 266);
+            this.labelAnaCat.Location = new System.Drawing.Point(159, 236);
             this.labelAnaCat.Name = "labelAnaCat";
             this.labelAnaCat.Size = new System.Drawing.Size(0, 28);
             this.labelAnaCat.TabIndex = 10;
+            // 
+            // labelNulo
+            // 
+            this.labelNulo.AutoSize = true;
+            this.labelNulo.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelNulo.Location = new System.Drawing.Point(159, 275);
+            this.labelNulo.Name = "labelNulo";
+            this.labelNulo.Size = new System.Drawing.Size(0, 28);
+            this.labelNulo.TabIndex = 12;
+            this.labelNulo.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(26, 275);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(127, 28);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Ana Catarina:";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // ResultadosFinais
             // 
@@ -152,6 +175,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(418, 312);
+            this.Controls.Add(this.labelNulo);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.labelAnaCat);
             this.Controls.Add(this.labelGesonel);
             this.Controls.Add(this.labelJorel);
@@ -184,5 +209,7 @@
         private Label labelJorel;
         private Label labelGesonel;
         private Label labelAnaCat;
+        private Label labelNulo;
+        private Label label8;
     }
 }

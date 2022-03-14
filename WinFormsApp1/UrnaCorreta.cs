@@ -202,6 +202,16 @@ namespace WinFormsApp1
         private void button6_Click(object sender, EventArgs e)
         {
             labelNome.Text = "VOTO EM BRANCO!";
+            for(int i = 0; i < votos.Count; i++)
+            {
+                int votosNum = int.Parse(votos[i]);
+                if (int.Parse(votos[i]) > int.Parse(votos[0]) &&
+                   int.Parse(votos[i]) > int.Parse(votos[1]) &&
+                   int.Parse(votos[i]) > int.Parse(votos[2]) &&
+                   int.Parse(votos[i]) > int.Parse(votos[3]) &&
+                   int.Parse(votos[i]) > int.Parse(votos[4]))
+                    votosNum++;
+            }
         }
 
         private void buttonConfirma_Click(object sender, EventArgs e)
